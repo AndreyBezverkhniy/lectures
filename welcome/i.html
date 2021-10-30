@@ -1,0 +1,41 @@
+<html>
+<body>
+<style>
+div {
+  //border: 1px solid black;
+  display: table;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  height: 90vh;
+  width: 90vw;
+  text-align: center;
+}
+span {
+  display: table-cell;
+  vertical-align: middle;
+}
+h1 {
+  font-size: 72pt;
+}
+</style>
+<script>
+function random_bg_color() {
+    var x = Math.floor(Math.random() * 256 * 0.8 + 256*0.1);
+    var y = Math.floor(Math.random() * 256 * 0.8 + 256*0.1);
+    var z = Math.floor(Math.random() * 256 * 0.8 + 256*0.1);
+    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    document.body.style.background = bgColor;
+}
+random_bg_color();
+setInterval(()=>{random_bg_color()}, 60*1000./130);
+</script>
+<audio autoplay src="pa_la_igresia.mp3"></audio>
+<div>
+  <span>
+    <h1>Starting soon at 20:00</h1>
+  </span>
+</div>
+</body>
+</html>
+
